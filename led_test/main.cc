@@ -2,17 +2,13 @@
 #include<fstream>
 #include<string>
 
-#include "leds/led.h"
+#include "func/ledfunc.h"
 
 using namespace std;
 
 int main(){
 
-    fiveg_led fiveg_led;
-    gnss_led gnss_led;
-    pwr_led pwr_led;
-    v2x_led v2x_led;
-    wave_led wave_led;
+    LED led;
 
     int num,g_num;
 
