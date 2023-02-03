@@ -6,15 +6,14 @@
 
 using namespace std;
 
-int gpio_num, led_num;
-std::string s;
+std::ofstream ofs(SYS_GPIO_DIR);
 
+int gpio_num, led_num;
 
 class led{
-    public:
+public:
 
-    static void led_status();
-    static void out();
+static void out();
 };
 
 enum GPIO{
@@ -26,48 +25,58 @@ enum GPIO{
 };
 
 void out(){
-
     if(gpio_num = enum_gpio487){
-        std::ofstream ofs("/gpio487/value", std::ios::ate);
+        std::ofstream out("/gpio487/value", std::ios::ate);
+        if(led_num = 1){
+            out << "1";
+        }
+        else if(led_num = 0){
+            out << "0";
+        }
     }
     else if(gpio_num = enum_gpio488){
-        std::ofstream ofs("/gpio488/value", std::ios::ate);
+        std::ofstream out("/gpio488/value", std::ios::ate);
+        if(led_num = 1){
+            out << "1";
+        }
+        else if(led_num = 0){
+            out << "0";
+        }
     }
     else if(gpio_num = enum_gpio489){
-        std::ofstream ofs("/gpio489/value", std::ios::ate);
+        if(led_num = 1){
+            std::ofstream out("/sys/class/gpio/gpio489/value", std::ios::ate);
+            out << "1";
+        }
+        else if(led_num = 0){
+            std::ofstream out("/sys/class/gpio/gpio489/value", std::ios::ate);
+            out << "0";
+        }
     }
     else if(gpio_num = enum_gpio490){
-        std::ofstream ofs("/gpio490/value", std::ios::ate);
+        std::ofstream out("/gpio490/value", std::ios::ate);
+        if(led_num = 1){
+            out << "1";
+        }
+        else if(led_num = 0){
+            out << "0";
+        }
     }
     else if(gpio_num = enum_gpio491){
-        std::ofstream ofs("/gpio491/value", std::ios::ate);
+        std::ofstream out("/gpio491/value", std::ios::ate);
+        if(led_num = 1){
+            out << "1";
+        }
+        else if(led_num = 0){
+            out << "0";
+        }
     }
     else if(gpio_num = 6){
         cout << "Exit The Program!!" << endl;
     }
-    if(ofs.fail())
-    {
-        std::cerr << "Error!" << std::endl;
-    }
-
-    ofs.close();
+if(ofs.fail())
+{
+    std::cerr << "Error!" << std::endl;
 }
-
-void led_status(){
-
-    if(ofs.is_open){
-        if(led_num = 1){
-            ofs << "1" << std::endl;
-        }
-    }
-        else if(led_num = 0){
-            ofs << "0" << std::endl;
-    }
-
-    if(ofs.fail())
-    {
-        std::cerr << "Error!" << std::endl;
-    }
-
     ofs.close();
 }
