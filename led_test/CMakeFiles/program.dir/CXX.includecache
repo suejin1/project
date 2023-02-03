@@ -11,6 +11,8 @@ iostream
 -
 fstream
 -
+string
+-
 
 /home/chj/workspace/project/led_test/main.cc
 iostream
