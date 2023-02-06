@@ -4,7 +4,8 @@
 
 using namespace std;
 
-extern int gpio_num, led_num;
+
+int gpio_num, led_num;
 
 int main(){
 
@@ -16,7 +17,6 @@ int main(){
     cin >> gpio_num;
     cout << "Select Your LED Status Insert ( 0 is off, 1 is on)" << endl;
     cin >> led_num;
-    led.out;
-
+    led.Out();
 }
 
