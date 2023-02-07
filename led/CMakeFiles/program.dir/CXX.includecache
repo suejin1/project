@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/chj/workspace/project/led_test/func/ledfunc.h
+/home/chj/workspace/project/led/func/ledfunc.h
 iostream
 -
 fstream
@@ -14,11 +14,11 @@ fstream
 string
 -
 
-/home/chj/workspace/project/led_test/main.cc
+/home/chj/workspace/project/led/main.cc
 iostream
 -
 fstream
 -
 func/ledfunc.h
-/home/chj/workspace/project/led_test/func/ledfunc.h
+/home/chj/workspace/project/led/func/ledfunc.h
 

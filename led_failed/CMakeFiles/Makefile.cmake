@@ -11,6 +11,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.19.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.19.2/CMakeSystem.cmake"
   "CMakeLists.txt"
+  "logic/CMakeLists.txt"
   "/usr/local/share/cmake-3.19/Modules/CMakeCCompiler.cmake.in"
   "/usr/local/share/cmake-3.19/Modules/CMakeCCompilerABI.c"
   "/usr/local/share/cmake-3.19/Modules/CMakeCInformation.cmake"
@@ -110,9 +111,11 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.19.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.19.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "logic/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/program.dir/DependInfo.cmake"
+  "logic/CMakeFiles/logic.dir/DependInfo.cmake"
   )

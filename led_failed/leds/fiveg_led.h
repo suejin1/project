@@ -4,14 +4,14 @@
 
 using namespace std;
 
-class gnss_led{
+class fiveg_led{
 public:
 
 void On();
 void Off();
 };
 
-void gnss_led::On(){
+void fiveg_led::On(){
     std::ofstream out("/sys/class/gpio/gpio487/value", std::ios::ate);
     if (out.is_open()){
         out << "1";
@@ -19,7 +19,7 @@ void gnss_led::On(){
 }
 
 
-void gnss_led::Off(){
+void fiveg_led::Off(){
     std::ofstream out("/sys/class/gpio/gpio487/value", std::ios::ate);
     if (out.is_open()){
         out << "0";
