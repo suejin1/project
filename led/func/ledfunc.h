@@ -6,11 +6,11 @@ using namespace std;
 
 extern int gpio_num,led_num;
 
+ofstream get_gpio_pin;
+
 class led{
 
 public:
-int led_num = 0;
-int gpio_num = 0;
 
 void On();
 void Off();
@@ -19,149 +19,81 @@ void Out();
 };
 
 void led::On(){
-    ofstream out("/value.txt", std::ios::ate);
-        out << "1" << endl;
-        out.close();
+    ofstream get_gpio_pin;
+    int value = 1;
+    get_gpio_pin << value;
 }
 
 
 void led::Off(){
-    ofstream out("/value.txt", std::ios::ate);
-        out << "0" << endl;
-        out.close();
-
+    ofstream get_gpio_pin;
+    int value = 0;
+    get_gpio_pin << value;
 }
 
 
 void led::Out(){
 
-    enum GPIO{
-        enum_gpio487 = 1,
-        enum_gpio488,
-        enum_gpio489,
-        enum_gpio490,
-        enum_gpio491
-    };
-
-    ofstream out;
-    GPIO gpio;
-
-    switch(gpio){
-        case enum_gpio487:
+    if(gpio_num == 1){
         if(led_num = 1){
-                std::ofstream out("/sys/class/gpio/gpio487/value");
-                led::On();
-            }
-            else if(led_num = 0){
-                std::ofstream out("/sys/class/gpio/gpio487/value");
-                led::Off();
-            }
-        
-        break;
-
-        case enum_gpio488:
-        if(led_num = 1){
-                std::ofstream out("/sys/class/gpio/gpio488/value");
-                led::On();
-            }
-            else if(led_num = 0){
-                std::ofstream out("/sys/class/gpio/gpio488/value");
-                led::Off();
-            }
-
-        break;
-
-        case enum_gpio489:
-        if(led_num = 1){
-                std::ofstream out("/sys/class/gpio/gpio491/value");
-                led::On();
-            }
-            else if(led_num = 0){
-                std::ofstream out("/sys/class/gpio/gpio491/value");
-                led::Off();
-            }
-
-        break;
-
-        case enum_gpio490:
-        if(led_num = 1){
-                std::ofstream out("/sys/class/gpio/gpio490/value");
-                led::On();
-            }
-            else if(led_num = 0){
-                std::ofstream out("/sys/class/gpio/gpio490/value");
-                led::Off();
-            }
-
-        break;
-
-        case enum_gpio491:
-        if(led_num = 1){
-                std::ofstream out("/sys/class/gpio/gpio491/value");
-                led::On();
-            }
-            else if(led_num = 0){
-                std::ofstream out("/sys/class/gpio/gpio491/value");
-                led::Off();
-            }
-
+            std::ofstream out("/sys/class/gpio/gpio487/value", std::ios::ate);
+            led::On();
+        }
+        else if(led_num = 0){
+            std::ofstream out("/sys/class/gpio/gpio487/value", std::ios::ate);
+            led::On();
+        }
     }
-    // if(out.is_open())
-    // {
-    //     if(gpio_num = 1){
-            
-    //     }
 
-    //     else if(gpio_num = 2){
-    //         if(led_num = 1){
-    //             std::ofstream out("/sys/class/gpio/gpio490");
-    //             led::On();
-    //         }
-    //         else if(led_num = 0){
-    //             std::ofstream out("/sys/class/gpio/gpio490");
-    //             led::Off();
-    //         }
-    //     }
+    if(gpio_num == 2){
+        if(led_num = 1){
+            std::ofstream out("/sys/class/gpio/gpio488/value", std::ios::ate);
+            led::On();
+        }
+        else if(led_num = 0){
+            std::ofstream out("/sys/class/gpio/gpio488/value", std::ios::ate);
+            led::Off();
+        }
+    }
 
-    //     else if(gpio_num = 3){
-    //         if(led_num = 1){
-    //             std::ofstream out("/sys/class/gpio/gpio489");
-    //             led::On();
-    //         }
-    //         else if(led_num = 0){
-    //             std::ofstream out("/sys/class/gpio/gpio489");
-    //             led::Off();
-    //         }
-    //     }
+    if(gpio_num == 3){
+        if(led_num = 1){
+            std::ofstream out("/sys/class/gpio/gpio489/value", std::ios::ate);
+            led::On();
+        }
+        else if(led_num = 0){
+            std::ofstream out("/sys/class/gpio/gpio489/value", std::ios::ate);
+            led::Off();
+        }
+    }
 
-    //     else if(gpio_num = 4){
-    //         if(led_num = 1){
-    //             std::ofstream out("/sys/class/gpio/gpio488");
-    //             led::On();
-    //         }
-    //         else if(led_num = 0){
-    //             std::ofstream out("/sys/class/gpio/gpio488");
-    //             led::Off();
-    //         }
-    //     }
-    
-    //     else if(led_num = 5){
-    //         if(led_num = 1){
-    //             std::ofstream out("/sys/class/gpio/gpio487");
-    //             led::On();
-    //         }
-    //         else if(led_num = 0){
-    //             std::ofstream out("/sys/class/gpio/gpio487");
-    //             led::Off();
-    //         }
-    //     }
-    // }
+    if(gpio_num == 4){
+        if(led_num = 1){
+            std::ofstream out("/sys/class/gpio/gpio490/value", std::ios::ate);
+            led::On();
+        }
+        else if(led_num = 0){
+            std::ofstream out("/sys/class/gpio/gpio490/value", std::ios::ate);
+            led::Off();
+        }
+    }
 
-    if(out.fail())
+    if(gpio_num == 5){
+        if(led_num = 1){
+            std::ofstream out("/sys/class/gpio/gpio491/value", std::ios::ate);
+            led::On();
+        }
+        else if(led_num = 0){
+            std::ofstream out("/sys/class/gpio/gpio491/value", std::ios::ate);
+            led::Off();
+        }
+    }
+
+    if(get_gpio_pin.fail())
     {
         std::cerr << "Error!" << std::endl;
     }
 
-    out.close();
+    get_gpio_pin.close();
     
 }
