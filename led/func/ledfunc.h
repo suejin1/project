@@ -6,33 +6,22 @@ using namespace std;
 
 extern int gpio_num,led_num;
 
-ofstream get_gpio_pin;
-
-
-
 class led{
 
 public:
 
-
-
-ofstream fivegout[5]
-
+ofstream ledout[5];
 
 void On();
 void Off();
 void Out();
-led();
+led_out();
 };
 
-led::led()
+led::led_out(int gpio_nums)
 {
-fivegout[0]
-}
+    ledout[0];
 
-led::led(int gpio_num )
-{
-fivegout[0]
 }
 
 void led::On(){
