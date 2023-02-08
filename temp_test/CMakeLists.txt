@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(led_test)
+project(temp_test)
 
 message(STATUS "Compiler")
 message(STATUS " - ID\t: ${CMAKE_CXX_COMPILER_ID}")

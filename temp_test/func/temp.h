@@ -21,7 +21,7 @@ void temp_zone0()
 
     if (in.is_open()){
         in >> value;
-        value = value / 1000;
+        value = value / 100;
         std::cout << "temp_zone0 temperature is :: " << value << "℃" << std::endl;
     }
     else {
@@ -37,7 +37,7 @@ void temp_zone1()
 
     if (in.is_open()){
         in >> value;
-        value = value / 1000;
+        value = value / 100;
         std::cout << "temp_zone1 temperature is :: " << value << "℃" << std::endl;
     }
     else {
@@ -54,3 +54,4 @@ void temp_logic(){
         temp_zone1();
     }
 }
+

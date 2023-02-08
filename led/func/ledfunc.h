@@ -8,15 +8,32 @@ extern int gpio_num,led_num;
 
 ofstream get_gpio_pin;
 
+
+
 class led{
 
 public:
 
+
+
+ofstream fivegout[5]
+
+
 void On();
 void Off();
 void Out();
-
+led();
 };
+
+led::led()
+{
+fivegout[0]
+}
+
+led::led(int gpio_num )
+{
+fivegout[0]
+}
 
 void led::On(){
     ofstream get_gpio_pin;
