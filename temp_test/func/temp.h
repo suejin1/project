@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int value;
+float value;
 extern int temp_sensor;
 
 class temperature{
@@ -21,7 +21,8 @@ void temp_zone0()
 
     if (in.is_open()){
         in >> value;
-        std::cout << "temp_zone0 temperature is :: " << value << std::endl;
+        value = value / 1000;
+        std::cout << "temp_zone0 temperature is :: " << value << "℃" << std::endl;
     }
     else {
         std::cout << "Error!!!" << std::endl;
@@ -36,7 +37,8 @@ void temp_zone1()
 
     if (in.is_open()){
         in >> value;
-        std::cout << "temp_zone1 temperature is :: " << value << std::endl;
+        value = value / 1000;
+        std::cout << "temp_zone1 temperature is :: " << value << "℃" << std::endl;
     }
     else {
         std::cout << "Error!!!" << std::endl;

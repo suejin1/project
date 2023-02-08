@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/chj/workspace/project/gps_test/main.cc
+stdio.h
+-
+gps.h
+/home/chj/workspace/project/gps_test/gps.h
+
+include/gps.h
+inttypes.h
+-
+limits.h
+-
+pthread.h
+-
+signal.h
+-
+stdbool.h
+-
+stdint.h
+-
+stdio.h
+-
+sys/time.h
+-
+sys/types.h
+-
+time.h
+-
+
