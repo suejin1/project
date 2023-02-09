@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/chj/workspace/project/temp_test/func/temp.cc
+temp.h
+/home/chj/workspace/project/temp_test/func/temp.h
+
+/home/chj/workspace/project/temp_test/func/temp.h
+iostream
+-
+fstream
+-
+string
+-
+

@@ -1,6 +1,0 @@
-/home/chj/workspace/project/led_failed/CMakeFiles/rebuild_cache.dir
-/home/chj/workspace/project/led_failed/CMakeFiles/program.dir
-/home/chj/workspace/project/led_failed/CMakeFiles/edit_cache.dir
-/home/chj/workspace/project/led_failed/logic/CMakeFiles/rebuild_cache.dir
-/home/chj/workspace/project/led_failed/logic/CMakeFiles/logic.dir
-/home/chj/workspace/project/led_failed/logic/CMakeFiles/edit_cache.dir
