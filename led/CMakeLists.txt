@@ -7,6 +7,6 @@ message(STATUS " - Version\t: ${CMAKE_CXX_COMPILER_VERSION}")
 message(STATUS " - Path\t: ${CMAKE_CXX_COMPILER}")
 
 
-add_executable (program main.cc)
+add_executable (led_program main.cc)
 add_subdirectory(func)
-target_link_libraries(program func)
+target_link_libraries(led_program func)

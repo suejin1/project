@@ -1,8 +1,6 @@
-#include <iostream>
-#include <chrono>
-#include <thread>
-#include <functional>
- 
+#include "interval.h"
+
+
 void run(std::function<void(void)> f, int duration)
 {
     std::thread([f, duration]() {

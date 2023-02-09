@@ -18,6 +18,7 @@ void led::Out(){
     else if(led_num == 0){
         led::Off((LED_TYPE)(gpio_num -1));
     }
+    
 }
 
 void led::On(LED_TYPE type){
