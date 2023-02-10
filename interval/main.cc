@@ -1,24 +1,22 @@
-#include "interval.h"
+#include "includes/interval.h"
 
+using namespace std;
 
-void run(std::function<void(void)> f, int duration)
-{
-    std::thread([f, duration]() {
-        while (true)
-        {
-            f();
-            auto ms = std::chrono::steady_clock::now() + std::chrono::milliseconds(duration);
-            std::this_thread::sleep_until(ms);
-        }
-    }).detach();
-}
- 
-void foo() {
-    std::cout << "Running.." << std::endl;
-}
+int start_time = 0, finish_time, interval_num;
 
-int main()
-{
-    run(foo, 1000);
-    while (true);
+int main(){
+    interval interval;
+
+    cout << "Welcome to Interval Timer !!!" << endl;
+    cout << "Insert Start Time" << endl;
+    cin >> start_time;
+    cout << "Insert Finish Time" << endl;
+    cin >> finish_time;
+    cout << "Please Select Interval Of your Timer" << endl;
+    cin >> interval_num;
+
+    interval.timer();
+
+    return 0;
+
 }
