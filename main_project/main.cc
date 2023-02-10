@@ -3,9 +3,10 @@
 using namespace std;
 
 int main(){
+
     logic logic;
 
-    switch(opcode)
+    switch()
     {
     case opcode_led:
         void led_proc();
@@ -15,9 +16,7 @@ int main(){
     
     case opcode_gps:
         void gps_proc();
-
-    
-    default:
-        break;
+    break;
     }
+
 }
