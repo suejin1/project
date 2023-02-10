@@ -3,6 +3,7 @@
 #include <thread>
 #include <string>
 
+
 enum opcode{
     opcode_led = 1,
     opcode_temp,
@@ -12,6 +13,7 @@ enum opcode{
 class logic{
 public:
 
+int temp_sensor;
 char buf[1024];
 
 void led_proc();
