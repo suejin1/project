@@ -3,6 +3,12 @@
 #include <thread>
 #include <string>
 
+enum opcode{
+    opcode_led = 1,
+    opcode_temp,
+    opcode_gps
+};
+
 class logic{
 public:
 

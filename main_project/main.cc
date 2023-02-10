@@ -5,12 +5,17 @@ using namespace std;
 int main(){
     logic logic;
 
-    switch()
+    switch(opcode)
     {
-    case logic.buf[1024] == logic::temp_proc:
+    case opcode_led:
+        void led_proc();
 
+    case opcode_temp:
+        void temp_proc();
+    
+    case opcode_gps:
+        void gps_proc();
 
-        break;
     
     default:
         break;
