@@ -1,4 +1,4 @@
-#include "logic.h"
+#include "./logic/logic.h"
 
 using namespace std;
 
@@ -13,8 +13,8 @@ int main(){
     logic logic;
     cout << "Welcome To the OBU Control Program !!! " << endl;
     cout << "Please insert num to choose Control Sysytem " << endl;
-    cin >> opcode;
-    
+    cin >> operationcode;
+
     switch(operationcode)
     {
     case opcode_led:

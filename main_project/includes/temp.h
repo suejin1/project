@@ -9,11 +9,11 @@ using namespace std;
 class temperature{
     public:
 
-    temp_zone0;
-    temp_zone1;
+    void temp_zone0();
+    void temp_zone1();
 };
 
-temp_zone0(){
+void temp_zone0(){
     ifstream in("/sys/class/thermal/theramal_zone0/temp");
 
     if(in.is_open()){
@@ -26,7 +26,7 @@ temp_zone0(){
     in.close();
 }
 
-temp_zone1(){
+void temp_zone1(){
     ifstream in("/sys/class/thermal/theramal_zone1/temp");
 
     if(in.is_open()){
