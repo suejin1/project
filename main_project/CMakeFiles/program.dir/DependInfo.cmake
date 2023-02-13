@@ -4,17 +4,18 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/chj/workspace/project/temp_test/func/temp.cc" "/home/chj/workspace/project/temp_test/func/CMakeFiles/logic.dir/temp.cc.o"
+  "/home/chj/workspace/project/main_project/main.cc" "/home/chj/workspace/project/main_project/CMakeFiles/program.dir/main.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "func/func/home/chj/workspace/project/temp_test"
+  "logic/logic/home/chj/workspace/project/main_project"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/chj/workspace/project/main_project/logic/CMakeFiles/logic.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

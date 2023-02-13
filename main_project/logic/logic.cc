@@ -1,28 +1,27 @@
-#include <fstream>
 #include "logic.h"
 
-extern int temp_sensor;
-
-using namespace std;
-
 void logic::temp_proc(){
-    if(temp_sensor == 1){
-        temp_zone0();
+
+    temperature temp;
+
+    cout << "Temperature Sensor Management Program" << endl;
+    cout << "Please Select Temperature Sensor" << endl;
+    cout << " 1. temp_zone0    2. temp_zone1" << endl;
+    cin >> temp_init;
+    
+    if(temp_init == 1){
+        temp.temp_zone0();
     }
-    else if(temp_sensor == 2){
-        temp_zone1();
+
+    else if(temp_init == 2){
+        temp.temp_zone1();
     }
+}
+
+void logic::led_proc(){
 
 }
 
-int temp_zone0(){
-    ifstream in("/sys/class/thermal/thermal_zone0/temp");
-
-    if (in.is_open()){
-        
-    }
-}
-
-int temp_zone1(){
+void logic::gps_proc(){
 
 }

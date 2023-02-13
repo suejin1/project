@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/logic.dir/temp.cc.o"
+  "CMakeFiles/logic.dir/logic.cc.o"
   "liblogic.a"
   "liblogic.pdb"
 )
