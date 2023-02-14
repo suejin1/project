@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/chj/workspace/project/main_project/includes/gps.h
+
+/home/chj/workspace/project/main_project/includes/led.h
+iostream
+-
+fstream
+-
+string
+-
+
+/home/chj/workspace/project/main_project/includes/temp.h
+iostream
+-
+fstream
+-
+
+/home/chj/workspace/project/main_project/logic/logic.h
+iostream
+-
+fstream
+-
+thread
+-
+string
+-
+../includes/gps.h
+/home/chj/workspace/project/main_project/includes/gps.h
+../includes/led.h
+/home/chj/workspace/project/main_project/includes/led.h
+../includes/temp.h
+/home/chj/workspace/project/main_project/includes/temp.h
+
+/home/chj/workspace/project/main_project/main.cc
+./logic/logic.h
+/home/chj/workspace/project/main_project/logic/logic.h
+

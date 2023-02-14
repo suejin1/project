@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int control_init, led_num;
+int control_init;
 
 int main(){
 
