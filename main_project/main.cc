@@ -1,11 +1,8 @@
 #include "includes/common.h"
-#include "./logic/logic.h"
+#include "logic/logic.h"
 
 using namespace std;
 using std::thread;
-
-
-int opcode_num,temp_init;
 
 void func_main_ui(){
 
@@ -13,14 +10,12 @@ void func_main_ui(){
     cout << "Welcome To the OBU Control Program !!! " << endl;
     cout << "Please insert num to choose Control Sysytem " << endl;
     cout << "1.LED Control    2.Temperature Sensor Control    3.GPS Sensor Control" << endl;
-    cin >> opcode_num;
+    cin >> g_opcode_num;
     
 }
 
 void func_led(){
-
-
-    switch(opcode_num)
+    switch(g_opcode_num)
     {
         case OPCODE_LED:
         cout << "This is LED Control Program" << endl;
@@ -31,18 +26,18 @@ void func_led(){
 
 void func_temp(){
 
-    switch(opcode_num)
+    switch(g_opcode_num)
     {
         case OPCODE_TEMP:
         cout << "This is Temperature Control Program" << endl;
-        logic::temp_proc((OPCODE_TYPE)(temp_num -1));
+        logic::temp_proc((OPCODE_TYPE)(g_temp_num -1));
     break;
     }
 }
 
 void func_gps(){
 
-    switch(opcode_num)
+    switch(g_opcode_num)
     {
         case OPCODE_GPS:
         cout << "This is GPS Control Program" << endl;
@@ -55,7 +50,7 @@ int main(){
     thread t1(func_main_ui);
     thread t2(func_led);
     thread t3(func_temp);
-    thread t4(func_gps)
+    thread t4(func_gps);
 
     t1.join();
     t2.join();

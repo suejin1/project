@@ -1,17 +1,4 @@
-#include <iostream>
-#include <fstream>
-#include <thread>
-#include <string>
-
-#include "../includes/gps.h"
-#include "../includes/led.h"
-#include "../includes/temp.h"
-
-enum OPCODE_TYPE{
-    OPCODE_LED = 1,
-    OPCODE_TEMP,
-    OPCODE_GPS
-};
+#include "../includes/common.h"
 
 class logic{
 public:
