@@ -16,5 +16,5 @@ enum LED_TYPE{
 class logic{
     public:
 
-    led_proc();
+    void led_proc();
 };

@@ -1,5 +1,6 @@
 #include "led.h"
-    
+#include "common.h"
+
 led::led(){
     ledout[LED_TYPE_GNSS].open("/sys/class/gpio/gpio487/value");
     ledout[LED_TYPE_WAVE].open("/sys/class/gpio/gpio488/value");
@@ -9,11 +10,12 @@ led::led(){
 }
 
 void led::Out(){
-    if(led_num == 1){
+    
+    if(g_led_num == 1){
         led::On((LED_TYPE)(gpio_num -1));
     }
 
-    else if(led_num == 0){
+    else if(g_led_num == 0){
         led::Off((LED_TYPE)(gpio_num -1));
     }
     

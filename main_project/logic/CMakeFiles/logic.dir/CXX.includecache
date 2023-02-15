@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/chj/workspace/project/main_project/includes/led.h
+
+/home/chj/workspace/project/main_project/logic/logic.cc
+logic.h
+/home/chj/workspace/project/main_project/logic/logic.h
+../includes/led.h
+/home/chj/workspace/project/main_project/includes/led.h
+
+/home/chj/workspace/project/main_project/logic/logic.h
+iostream
+-
+fstream
+-
+

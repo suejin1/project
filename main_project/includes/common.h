@@ -6,7 +6,7 @@
 #include <thread>
 #include <string>
 
-#include "logic.h"
+#include "../logic/logic.h"
 
 enum OPCODE_TYPE{
     OPCODE_LED = 1,

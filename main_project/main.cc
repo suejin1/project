@@ -1,4 +1,4 @@
-#include "common.h"
+#include "includes/common.h"
 
 using namespace std;
 
@@ -13,9 +13,9 @@ int main()
 
     switch(g_insert_num);
     {
-        case(g_insert_num = 1) :
+        case(g_insert_num == 1) :
             cout << "You Choose LED Controller!" << endl;
-            led.Out();
+            logic.led_proc((OPCODE_LED)(g_insert_num -1));
             break;
         
     }

@@ -1,4 +1,10 @@
+extern int g_led_num;
+extern int g_gpio_num;
+
 class led{
+    public:
+
+
     led();
     ofstream ledout[5];
 
