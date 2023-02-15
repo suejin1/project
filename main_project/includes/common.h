@@ -1,14 +1,12 @@
 #ifndef _COMMON_H_
 #define _COMMON_H_
 
-#include <thread>
-#include <fstream>
 #include <iostream>
+#include <fstream>
+#include <thread>
 #include <string>
 
-#include "gps.h"
-#include "led.h"
-#include "temp.h"
+#include "logic.h"
 
 enum OPCODE_TYPE{
     OPCODE_LED = 1,
@@ -16,10 +14,7 @@ enum OPCODE_TYPE{
     OPCODE_GPS
 };
 
-int g_opcode_num;
-int g_led_num;
-int g_gpio_num;
-int g_temp_num;
+int g_gpio_num, g_led_num, g_insert_num;;
 
 
 #endif 
