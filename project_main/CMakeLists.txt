@@ -8,4 +8,4 @@ message(STATUS " - Path\t: ${CMAKE_CXX_COMPILER}")
 
 add_executable (program main.cc)
 add_subdirectory(func)
-target_link_libraries(program func)
+target_link_libraries(program PUBLIC func)

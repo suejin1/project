@@ -1,6 +1,6 @@
 #include "../includes/tempfunc.h"
 
-void temperature::temp()
+void temperature::templocation()
 {
     in[TEMP_TYPE_0].open("/sys/class/thermal/thermal_zone0/temp");
     in[TEMP_TYPE_1].open("/sys/class/thermal/thermal_zone1/temp");
@@ -21,12 +21,12 @@ void temperature::Temp_Out()
 
 void temperature::Temp_Zone0(TEMP_TYPE type)
 {
-    in >> value;
+    in[type] >> value;
     std::cout << "temp_zone0 temperature is :: " << value << "℃" << std::endl;
 }
 
 void temperature::Temp_Zone1(TEMP_TYPE type)
 {
-    in >> value;
+    in[type] >> value;
     std::cout << "temp_zone1 temperature is :: " << value << "℃" << std::endl;
 }

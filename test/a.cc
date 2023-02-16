@@ -1,34 +1,27 @@
 #include "header.h"
 
+c_data data;
+stIpcMsg msg;
+
 void * sned_thread(void * param)
 {
-  c_data data;
   int limit = *(int *) param;
 
-  for (data.i=1; data.i<=limit; data.i++) 
-  {
-    exmaple();
-    input();
-    send();
-    ++data.target;
-    sleep(1);
-  }
+  exmaple();
+  input();
+  send();
+  sleep(1);
 }
 
 void * receive_thread(void * param)
 {
-  c_data data;
   int limit = *(int *) param;
 
-  for (data.i=1; data.i<=limit; data.i++) 
-  {
-    receive();
-  }
+  receive();
 }
  
 int main()
 {
-  c_data data;
   pthread_t add, sub;
   int param = 100;
   
@@ -45,10 +38,8 @@ int main()
     perror("thread create error : ");
     exit(0);
   }
-  
  
   sleep(3000);
-  printf("target : %d\n", data.target);
  
   return 0;
 }

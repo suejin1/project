@@ -1,11 +1,12 @@
 #ifndef _LEDFUNC_H_
 #define _LEDFUNC_H_
 
-#include "common.h"
+#include <iostream>
+#include <fstream>
 
 using namespace std;
 
-extern int gpio_num,led_num;
+// extern int gpio_num,led_num;
 
 enum LED_TYPE
 {
@@ -20,12 +21,17 @@ class led
 {
 public:
 
+int gpio_num, led_num;
+
+led(){};
+
 void led_out();
 ofstream ledout[5];
 
 void On(LED_TYPE type);
 void Off(LED_TYPE type);
 void Out();
+void main();
 // int led_init();
 
 };

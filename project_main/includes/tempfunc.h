@@ -1,11 +1,12 @@
 #ifndef _TEMPFUNC_H_
 #define _TEMPFUNC_H_
 
-#include "common.h"
+#include <iostream>
+#include <fstream>
 
 using namespace std;
 
-extern int temp_sensor;
+// extern int temp_sensor;
 
 enum TEMP_TYPE
 {
@@ -16,12 +17,16 @@ enum TEMP_TYPE
 class temperature
 {
     public:
+int temp_sensor;
 
-    void temp();
+    temperature()
+    {
+    };
+    
     ifstream in[3];
     
     float value = value / 1000;
-    
+    void templocation();
     void Temp_Out();
     void Temp_Zone0(TEMP_TYPE type);
     void Temp_Zone1(TEMP_TYPE type);
