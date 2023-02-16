@@ -9,17 +9,16 @@ void UI_MAIN::main_ui_init()
     led led;
     // temperature temp;
 
-    if(static_cast<int>(main.insert = UI_INSERT::UI_LED))
+    if(static_cast<int>(UI_INSERT::UI_LED) == main.insert -1)
     {
-        // led.main();
-        cout << "This is Led Control System!" << endl;
-        cout << "Please Insert Number of You Want to Control!!!" << endl;
-        cout << "1.GNSS_LED    2.WAVE_LED    3.C_V2X_led    4.5G_LED    5.RUN_LED    6.EXIT" << endl;
+        cout << "This is LED Controller" << endl;
+        cout << "Please Choose What Led You Want to Control" << endl;
+        cout << "1.GNSS LED    2.WAVE LED    3.C-V2X LED    4.5G LED    5.RUN LED    6.EXIT" << endl;
         cin >> led.gpio_num;
-        cout << "Select Yout LED Status Insert (0 is off, 1 is on)" << endl;
+        cout << "Select Your LED Status Insert ( 0 is off, 1 is on)" << endl;
         cin >> led.led_num;
-
         led.Out();
+
     }
         // case UI_TEMP:
         // temp.Temp_Out();

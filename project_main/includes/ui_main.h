@@ -18,6 +18,7 @@ class UI_MAIN
 {
     public:
     int insert;
+
     UI_MAIN(){};
     void main_ui_init();
 };

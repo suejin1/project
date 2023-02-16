@@ -17,15 +17,13 @@ enum TEMP_TYPE
 class temperature
 {
     public:
-int temp_sensor;
 
-    temperature()
-    {
-    };
-    
+    temperature(){};
     ifstream in[3];
-    
+
+    int temp_sensor;
     float value = value / 1000;
+    
     void templocation();
     void Temp_Out();
     void Temp_Zone0(TEMP_TYPE type);
