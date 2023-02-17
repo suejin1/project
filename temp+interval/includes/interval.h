@@ -5,6 +5,7 @@
 #include <unistd.h>
  
 class interval{
+
 public:
 int hours = 0;
 int minutes = 0;
