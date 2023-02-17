@@ -10,9 +10,6 @@ int main()
     cout << "Please Select What do You Want to Control!!!" << endl;
     cout << "1.LED    2.Temperature    3.GPS" << endl;
     cin >> main.insert;
-    
-    main.main_ui_init();
+    main.main_ui_init((UI_INSERT)(main.insert));
 
-   return 0;
 }
-

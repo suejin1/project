@@ -1,12 +1,12 @@
 #ifndef _UI_MAIN_H_
 #define _UI_MAIN_H_
 
+#include <thread>
+
 #include "tempfunc.h"
 #include "ledfunc.h"
 
-enum class UI_INSERT : int;
-
-enum class UI_INSERT : int
+enum UI_INSERT
 {
     UI_LED = 0,
     UI_TEMP,
@@ -17,10 +17,10 @@ enum class UI_INSERT : int
 class UI_MAIN
 {
     public:
-    int insert;
 
     UI_MAIN(){};
-    void main_ui_init();
+    int insert;
+    void main_ui_init(UI_INSERT type);
 };
 
 #endif

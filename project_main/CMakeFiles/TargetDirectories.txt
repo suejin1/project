@@ -1,6 +1,0 @@
-/home/chj/workspace/project/project_main/CMakeFiles/rebuild_cache.dir
-/home/chj/workspace/project/project_main/CMakeFiles/program.dir
-/home/chj/workspace/project/project_main/CMakeFiles/edit_cache.dir
-/home/chj/workspace/project/project_main/func/CMakeFiles/rebuild_cache.dir
-/home/chj/workspace/project/project_main/func/CMakeFiles/func.dir
-/home/chj/workspace/project/project_main/func/CMakeFiles/edit_cache.dir

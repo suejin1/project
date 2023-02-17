@@ -10,7 +10,7 @@ using namespace std;
 
 enum LED_TYPE
 {
-    LED_TYPE_GNSS = 1,
+    LED_TYPE_GNSS = 0,
     LED_TYPE_WAVE,
     LED_TYPE_C_V2X,
     LED_TYPE_5G,
