@@ -1,3 +1,0 @@
-/home/chj/workspace/project/test/CMakeFiles/rebuild_cache.dir
-/home/chj/workspace/project/test/CMakeFiles/myapp.dir
-/home/chj/workspace/project/test/CMakeFiles/edit_cache.dir
