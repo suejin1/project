@@ -1,10 +1,11 @@
-#include "temp.h"
-#include "interval.h"
+#include "../includes/temp.h"
+#include "../includes/interval.h"
 
 void temperature::temp_logic(){
     interval interval;
 
     interval.timer
+    
     if(temp_sensor == 1){
         temp_zone0();
     }
