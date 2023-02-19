@@ -26,6 +26,12 @@ void UI_MAIN::main_ui_init(UI_INSERT type)
         cin >> temp.temp_sensor;
         temp.Temp_Out();
         break;
+
+        case UI_GPS:
+        cout << "This is Temperature Sensor Controller" << endl;
+        cout << "Please Insert Interval of You Want to Receive Data" << endl;
+        cin >> 
+        
         
     }
 }
