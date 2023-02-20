@@ -5,7 +5,7 @@ stIpcMsg msg;
 stmq mq;
 sttime timer;
 
-void * send_thread(void * param)
+void * sned_thread(void * param)
 {
   int limit = *(int *) param;
 
