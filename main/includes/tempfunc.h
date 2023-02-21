@@ -22,8 +22,10 @@ class temperature
     ifstream in[3];
 
     int temp_sensor;
+    int z, counter, end;
     float value = value / 1000;
     
+    void sigint_handler(int signo);
     void templocation();
     void Temp_Out();
     void Temp_Zone0(TEMP_TYPE type);

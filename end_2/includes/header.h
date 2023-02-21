@@ -12,6 +12,7 @@
 #include <pthread.h>
 #include <cstdio>
 #include <thread>
+#include <signal.h>
 #include "data.h"
 #include "input.h"
 

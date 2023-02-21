@@ -6,6 +6,14 @@ void temperature::templocation()
     in[TEMP_TYPE_1].open("/sys/class/thermal/thermal_zone1/temp");
 }
 
+void sigint_handler(int isgno)
+{
+    cout << temperature::Temp_Out(); << "Interval : %d\n" << z << endl;
+    z++;
+    counter += end;
+    alarm(end);
+}
+
 void temperature::Temp_Out()
 {
     if(temp_sensor == 1)

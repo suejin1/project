@@ -1,8 +1,8 @@
-#include "../includes/header.h"
+#include "includes/header.h"
 
-void input::exmaple()
+void exmaple() // 입력 예시
 {
-    timer.timer = time(NULL);
+    timer.timer = time(NULL); //타이머
     timer.t = localtime(&timer.timer);
 
     printf("┌──────────────────────────────────────────────────────┐\n│");

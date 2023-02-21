@@ -1,4 +1,4 @@
-# /end_1/mq/CMakeLists.txt
+#/end_2/mq/CMakeLists.txt
 
 # 정적 라이브러리 func을 만든다.
 add_library(mq STATIC checkDate.cc receive.cc send.cc)

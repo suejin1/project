@@ -1,6 +1,6 @@
 #include "header.h"
 
-bool checkDate(enum OP op, enum LN ln, enum P p)
+bool checkDate(enum OP op, enum LN ln, enum P p) //데이터 유효성 검사 (?)
 {
 	if ( op==OPCODE_LED)
 	{

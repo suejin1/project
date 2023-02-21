@@ -1,7 +1,7 @@
-# /end_1/func/CMakeLists.txt
+#/end_2/func/CMakeLists.txt
 
 # 정적 라이브러리 func을 만든다.
-add_library(func STATIC EndTime.cc input.cc Interval.cc mainfunc.cc)
+add_library(func STATIC EndTime.cc input.cc Interval.cc)
 # 해당 라이브러리 컴파일 시 사용할 헤더파일 경로
 target_include_directories(func PUBLIC ../includes)
 
