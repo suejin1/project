@@ -1,7 +1,9 @@
-#include "header.h"
+#include "../includes/header.h"
 
-void receive()
+void input::receive()
 {
+    stmq mq;
+
     mq.key = ftok("progfile", 65);
     mq.msgid = msgget(mq.key, 0666 | IPC_CREAT);
     

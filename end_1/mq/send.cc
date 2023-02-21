@@ -1,8 +1,8 @@
-#include "header.h"
+#include "../includes/header.h"
 
 bool checkDate(OP op, LN ln, P p);
 
-void send()
+void input::send()
 {
   mq.key = ftok("progfile", 65);
   mq.msgid = msgget(mq.key, 0666 | IPC_CREAT);

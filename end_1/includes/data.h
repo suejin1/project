@@ -2,7 +2,24 @@
 
 #define IPC_DATA_MAX_SIZE 10
 
-typedef struct {
+enum UI_INSERT{
+  UI_LED = 0,
+  UI_TEMP,
+  UI_GPS
+};
+
+class UI_MAIN
+{
+  public:
+
+  UI_MAIN(){};
+  int insert;
+  void main_ui_init(UI_INSERT type);
+};
+
+class stIpcMsg{
+  public:
+
   long			mtype;          //64bit = 8Byte
   uint32_t      opcode; //unsigned long 32비트 4바이트
   uint32_t      LN;
@@ -12,29 +29,34 @@ typedef struct {
 
   uint32_t      data_size; //unsigned long 32비트 4바이트
   uint8_t	    data[IPC_DATA_MAX_SIZE];  //unsigned char 8바이트 1비트
-} stIpcMsg ;
+};
 
-typedef enum OP{  OPCODE_LED = 1, OPCODE_TEMP, OPCODE_GPS } op;
-typedef enum LN{ LN_1 =1, LN_2, LN_3, LN_4, LN_5 } ln;
-typedef enum P{  P_1=1, P_2, P_3 } p;
-typedef enum Time{  S, E } t;
+enum OP{  OPCODE_LED = 1, OPCODE_TEMP, OPCODE_GPS } op;
+enum LN{ LN_1 =1, LN_2, LN_3, LN_4, LN_5 } ln;
+enum P{  P_1=1, P_2, P_3 } p;
+enum Time{  S, E } t;
 
-typedef struct {
+class c_data{
+  public:
   char opcode1, LedNum1, patter1;
   int opcode, LedNum, patter, i;
-} c_data;
+};
 
-typedef struct {
+class stmq {
+
+  public:
   key_t key;
   int msgid;
-} stmq;
+};
 
-typedef struct {
+class sttime{
+  public:
   int StartTime, EndTime;
+
 
   time_t timer;
   struct tm* t;
-} sttime;
+};
 
 extern c_data data;
 extern stIpcMsg msg;

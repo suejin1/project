@@ -1,6 +1,6 @@
-#include "header.h"
+#include "../includes/header.h"
 
-void EndTime()
+void input::EndTime()
 {
     int a=0;
 

@@ -1,16 +1,20 @@
-#include "header.h"
+#include "includes/header.h"
+
+using namespace std;
 
 c_data data;
 stIpcMsg msg;
 stmq mq;
 sttime timer;
+input 
+
 
 void * sned_thread(void * param)
 {
   int limit = *(int *) param;
 
   memset(&data, 0, sizeof(c_data));
-  exmaple();
+  input::exmaple();
   input();
   send();
 }

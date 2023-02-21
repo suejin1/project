@@ -1,6 +1,6 @@
-#include "header.h"
+#include "../includes/header.h"
 
-void exmaple()
+void input::exmaple()
 {
     timer.timer = time(NULL);
     timer.t = localtime(&timer.timer);

@@ -1,6 +1,6 @@
-#include "header.h"
+#include "../includes/header.h"
 
-void input()
+input::input()
 {
     // clock_t start = clock();
     

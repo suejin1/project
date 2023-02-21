@@ -1,6 +1,6 @@
-#include "header.h"
+#include "../includes/header.h"
 
-void Interval()
+void input::Interval()
 {
     int a=0;
 
