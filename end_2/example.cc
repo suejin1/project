@@ -11,11 +11,11 @@ void exmaple() // 입력 예시
     printf("LED :  1  LedNum  StartTime  EndTime     patter       │\n│");
     printf("     ( 1   1~5      free      free        1~3       ) │\n│");
     printf("                                                      │\n│");
-    printf("TEMP : 2    0     StartTime  EndTime    Interval      │\n│");
-    printf("     ( 2    0       free      free        1~9       ) │\n│");
+    printf("TEMP : 2    ?     StartTime  EndTime    Interval      │\n│");
+    printf("     ( 2   1~2      free      free        1~9       ) │\n│");
     printf("                                                      │\n│");
-    printf("GPS :  3    0     StartTime  EndTime    Interval      │\n│");
-    printf("     ( 3    0       free      free        1~9       ) │\n│");
+    printf("GPS :  3    ?     StartTime  EndTime    Interval      │\n│");
+    printf("     ( 3   1~2      free      free        1~9       ) │\n│");
     printf("                                                      │\n│");
     printf("StartTime : 입력한 만큼 대기 후 동작을 시작합니다.    │\n│");
     printf("EndTime : 입력한 만큼 대기 후 동작을 종료합니다.      │\n│");
