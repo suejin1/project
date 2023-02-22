@@ -14,12 +14,12 @@ void receive() //메시지 큐 받음
     }
     else if(msg.opcode==2)
     {
-        printf(" OP: %x  0  StartTime: %d  EndTime: %d  Interval: %x \n", msg.opcode, msg.S, msg.E, msg.P);
+        printf(" OP: %x  ?: %x  StartTime: %d  EndTime: %d  Interval: %x \n", msg.opcode, msg.LN, msg.S, msg.E, msg.P);
         printf("-----------------------------------------------------\n\n");
     }
     else
     {
-        printf(" OP: %x  0  StartTime: %d  EndTime: %d  Interval: %x \n", msg.opcode, msg.S, msg.E, msg.P);
+        printf(" OP: %x  ?: %x  StartTime: %d  EndTime: %d  Interval: %x \n", msg.opcode, msg.LN, msg.S, msg.E, msg.P);
         printf("-----------------------------------------------------\n\n");
     }
 }
