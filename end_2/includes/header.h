@@ -15,6 +15,7 @@
 #include <signal.h>
 #include "data.h"
 #include "input.h"
+#include "tempfunc.h"
 
 #define _CRT_SECURE_NO_WARNINGS
 
